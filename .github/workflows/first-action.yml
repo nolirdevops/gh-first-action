@@ -1,0 +1,16 @@
+# me jep emrin e workflow
+
+name: First Workflow
+
+# pasi qe i jepim workflowit emer duhet me tregu kur ky workflow duhet mu egzekutu
+
+on: workflow_dispatch
+
+jobs: 
+  first-job: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done - bye!"
